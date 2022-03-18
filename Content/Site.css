@@ -1,0 +1,15 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('../Images/domik.png');
+    background-size: 100%;
+    background-attachment: fixed;
+    color: black;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    background-color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+}

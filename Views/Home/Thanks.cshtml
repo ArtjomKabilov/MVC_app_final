@@ -1,0 +1,22 @@
+﻿@model KutseApp.Models.Guest
+
+@{
+    ViewBag.Title = "Tänan!";
+}
+<div>
+    <p>Tänan sind, @Model.Name</p>
+</div>
+<div style="display: block">
+    @if (Model.Attend == true)
+    {
+        @:Ootan sind väga!<br />
+        <img src="~/Images/smile.jpg" alt="Alternate Text" /><br />
+        @Html.ActionLink("Meeldetuletus", "GotIt", "Home", new { name = ViewBag.Name }, Model.Email);
+    }
+    else
+    {
+        @:Väga kurb! Näeme seisel korral!
+        <img src="~/Images/sad.jpg" alt="Alternate Text" />
+    }
+</div>
+<h2>Tänan</h2>
